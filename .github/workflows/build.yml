@@ -10,7 +10,8 @@ on:
     branches:
       - master
       - winui-build
-
+  workflow_dispatch:  # This adds the manual trigger
+  
 jobs:
   build_uwp:
     name: Build-FFmpegInteropX UWP
