@@ -52,3 +52,9 @@ jobs:
         shell: powershell
         run: |
           ./Build-FFmpegInteropX.ps1 -WindowsTarget Desktop -Platforms x64
+
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: build-output
+          path: Output/
